@@ -10,7 +10,7 @@
 
     End Sub
 
-    Private Sub Panel1_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown
+    Private Sub MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown, Label1.MouseDown
 
         If e.Button = MouseButtons.Left Then
 
@@ -20,7 +20,7 @@
 
     End Sub
 
-    Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
+    Private Sub MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove, Label1.MouseMove
 
         If e.Button = MouseButtons.Left Then
 
@@ -35,4 +35,5 @@
         WindowState = FormWindowState.Minimized
 
     End Sub
+
 End Class
